@@ -1,0 +1,6 @@
+package com.person;
+
+public class Staff {
+	String School;
+	double Pay;
+}

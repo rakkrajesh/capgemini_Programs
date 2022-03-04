@@ -1,0 +1,16 @@
+package com.oops.abtraction;
+
+public class Circle extends Shape {
+	private double radius = 1.0;
+	
+	Circle (){
+		
+	}
+
+	public Circle(String color, boolean filled, double radius) {
+		super();
+		this.radius = radius;
+	}
+	
+	
+}

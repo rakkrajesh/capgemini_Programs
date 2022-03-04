@@ -1,0 +1,9 @@
+package com.person;
+
+public class Student {
+	String Program;
+	int Year;
+	double fee;
+	
+	
+}

@@ -1,0 +1,11 @@
+package com.test;
+
+public class Demo {
+	public static void main(String[] args) {
+		
+			String s1="hjhh"; // 1
+			String s2="\u0002"; //2
+			String s3="'\\'"; //3
+		}
+	}
+

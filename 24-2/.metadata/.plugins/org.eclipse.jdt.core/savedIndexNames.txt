@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Drive D\CAPGEMINI\Training\Core Java\24-2\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1034098981.index
+25664613.index
+284369765.index

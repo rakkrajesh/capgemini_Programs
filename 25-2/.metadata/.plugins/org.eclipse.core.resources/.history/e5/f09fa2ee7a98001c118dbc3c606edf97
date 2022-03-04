@@ -1,0 +1,7 @@
+package com.banking;
+
+public class BankMain {
+	public static void main(String[] args) {
+		SBI sbi =new SBI(123.23f, 10, 324.0f, 324.234f);
+	}
+}

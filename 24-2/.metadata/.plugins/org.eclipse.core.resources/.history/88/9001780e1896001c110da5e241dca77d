@@ -1,0 +1,10 @@
+package com.test;
+
+public class Demo {
+	public static void main(String[] args) {
+		if("String".replace('t', 'T')=="String".replace('t','T'));
+		System.out.println("true");
+		
+		}
+	}
+

@@ -1,0 +1,22 @@
+package programs;
+
+public class FizzBizz 
+{
+	private static int k;
+
+	public static void main(String[] args) 
+	{
+		if (k%3==0 && k %5==0)
+		{
+			System.out.println("FizzBizz");
+		}
+		if (k%3==0)
+		{
+			System.out.println("Fizz");
+		}
+		if (k%5==0)
+		{
+			System.out.println("Bizz");
+		}
+	}
+}

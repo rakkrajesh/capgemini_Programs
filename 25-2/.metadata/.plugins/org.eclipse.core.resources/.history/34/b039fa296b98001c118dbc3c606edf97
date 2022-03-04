@@ -1,0 +1,10 @@
+package com.person;
+
+public class PersonMain {
+	public static void main(String[] args) {
+		
+		Person p = new Person(ansiha, akjhfiha);
+		Staff sf = new Staff(sdfsaf,234.3);
+		Student std = new Student();
+	}
+}

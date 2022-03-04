@@ -1,0 +1,15 @@
+package com.oops.abtraction;
+
+public class Rectangle extends Shape {
+	private double width = 1.0;
+	private double length = 1.0;
+	public Rectangle(double width, double length, double radius, String color, boolean filled) {
+		super();
+		this.width = width;
+		this.length = length;
+		
+	}
+	
+	
+	
+}

@@ -1,0 +1,20 @@
+package stringsExample;
+
+import java.util.Scanner;
+
+public class StringWordCount {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the String ..");
+		String st1 =sc.nextLine();
+		
+		for (String sp : st1) {
+			System.out.println(sp);
+		}
+		
+		
+	}
+
+}

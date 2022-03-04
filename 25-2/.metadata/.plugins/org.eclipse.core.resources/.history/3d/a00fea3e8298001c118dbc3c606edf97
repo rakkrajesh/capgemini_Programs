@@ -1,0 +1,8 @@
+package com.items;
+
+public class items 
+{
+	String Name;
+	String Description;
+	double price;
+}

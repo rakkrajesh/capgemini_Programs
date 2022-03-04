@@ -1,0 +1,10 @@
+package com.banking;
+
+public class SBI extends Bank {
+	
+	public SBI (float Principal, int TimePeriod, float SimpleInterest, float RateOfInterest) {
+		super(Principal, TimePeriod, SimpleInterest, RateOfInterest);
+	}
+	double res = (Principal*TimePeriod);
+	RateOfInterest = 100*SimpleInterest/res;
+}

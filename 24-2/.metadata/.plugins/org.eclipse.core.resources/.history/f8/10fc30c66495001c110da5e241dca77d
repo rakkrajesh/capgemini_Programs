@@ -1,0 +1,29 @@
+package com.oops.classexample;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Emplyoee 
+{
+	Scanner sc = new Scanner(System.in);
+	int employeeId;
+	String employeeMail;
+	String employeeName;
+	Date employDOJ;
+	Date employDOB;
+	long employNo;
+	
+	void EmployData() {
+		System.out.println("Enter the following data");
+		System.out.print("Enter the Employ Id: ");
+		employeeId = sc.nextInt();
+		System.out.print("Enter the Employ Name: ");
+		employeeName = sc.nextLine();
+		System.out.print("Enter the Employ Mail: ");
+		employeeMail = sc.nextLine();
+		System.out.print("Enter the Employ DOJ: ");
+		String dob = sc.nextLine();
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
+		employDOB = sdf.parse(dob);
+}

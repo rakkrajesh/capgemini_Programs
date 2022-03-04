@@ -1,0 +1,9 @@
+package com.oops.abtraction;
+
+public class Square {
+	private double width = 1.0;
+	private double length = 1.0;
+	private double radius = 1.0;
+	private String color = "red";
+	private boolean filled = true;
+}

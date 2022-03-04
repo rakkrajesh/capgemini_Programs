@@ -1,0 +1,9 @@
+package com.person;
+
+public class PersonMain {
+	public static void main(String[] args) {
+		
+		Staff sf = new Staff(cyz,234.3);
+		Student std = new Student();
+	}
+}

@@ -1,0 +1,11 @@
+package com.oops.abtraction;
+
+public class Square {
+
+	public Square(double width, double length, double radius, String color, boolean filled) {
+		super();
+
+	}
+	
+	
+}

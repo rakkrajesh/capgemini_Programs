@@ -1,0 +1,29 @@
+package stringsExample;
+
+import java.util.Scanner;
+
+public class StringWordCount {
+
+	private static int count;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the String ..");
+		String st1 =sc.nextLine();
+		String[] sa = st1.split(" ");
+		
+		for (String sp : sa) 
+		{ 
+			if (sp.equals(" ")) {
+				count++;
+			}
+			System.out.println(sp);
+		}
+		System.out.println(count);
+		
+		
+		
+	}
+
+}

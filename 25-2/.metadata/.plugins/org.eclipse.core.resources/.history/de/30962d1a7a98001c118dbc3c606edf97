@@ -1,0 +1,8 @@
+package com.banking;
+
+public class SBI {
+	
+	public SBI () {
+		super();
+	}
+}

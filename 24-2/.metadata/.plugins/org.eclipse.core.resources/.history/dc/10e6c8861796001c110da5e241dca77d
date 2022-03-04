@@ -1,0 +1,13 @@
+package com.test;
+
+public class Demo {
+	public static void main(String[] args) {
+		char c1 =65;
+		switch(c1) {
+		case 'A' : System.out.println("hello");
+		default : System.out.println("three");
+		
+		
+		}
+	}
+}

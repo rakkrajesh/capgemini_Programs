@@ -1,0 +1,19 @@
+package com.banking;
+
+public class Bank {
+	float Principal;
+	int TimePeriod;
+	float SimpleInterest;
+	float RateOfInterest;
+	public Bank(float principal, int timePeriod, float simpleInterest, float rateOfInterest) {
+		super();
+		Principal = principal;
+		TimePeriod = timePeriod;
+		SimpleInterest = simpleInterest;
+		RateOfInterest = rateOfInterest;
+		
+		
+	}
+	
+	
+}

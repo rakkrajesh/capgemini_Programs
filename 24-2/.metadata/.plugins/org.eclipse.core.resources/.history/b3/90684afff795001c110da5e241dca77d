@@ -1,0 +1,14 @@
+package com.oops.classexample;
+import java.text.ParseException;
+
+public class xty2{
+
+public class emplyoeemain {
+	public static void main(String[] args) throws ParseException {
+		emplyoee e=new emplyoee();
+		
+		e.reademplyoeeDetails();
+		e.displayemplyoeeDetails();
+	}
+
+}

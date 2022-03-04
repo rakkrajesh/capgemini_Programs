@@ -1,0 +1,12 @@
+package com.oops.classarray;
+
+import java.util.Scanner;
+
+public class StudentDetail {
+	Scanner sc =new Scanner(System.in);
+	
+	int[] sub1 = {sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt()};
+	int[] sub2 = {sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt()};
+	int[] sub3 = {sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt()};
+	
+}

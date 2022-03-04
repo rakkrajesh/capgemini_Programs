@@ -1,0 +1,11 @@
+package com.person;
+
+public class PersonMain {
+	public static void main(String[] args) {
+		
+		Person p = new Person(hello, akjhfiha);
+//		Staff sf = new Staff(sdfsaf,234.3);
+		p.getAddress();
+		Student std = new Student();
+	}
+}

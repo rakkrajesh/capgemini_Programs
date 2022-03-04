@@ -1,0 +1,9 @@
+package com.banking;
+
+public class Bank {
+	float Principal;
+	int TimePeriod;
+	float SimpleInterest;
+	float RateOfInterest;
+	
+}

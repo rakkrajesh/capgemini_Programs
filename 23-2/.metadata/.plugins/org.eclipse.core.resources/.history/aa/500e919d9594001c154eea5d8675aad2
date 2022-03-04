@@ -1,0 +1,43 @@
+package array;
+
+import java.util.Scanner;
+
+public class ArrayMerge {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s1 = new Scanner(System.in);
+		
+		int[] a = new int[3];
+		int[] b = new int[3];
+		int[] ab = new int[a.length+b.length];
+		
+		for (int i=0; i<a.length; i++) {
+			a[i]=s1.nextInt();
+		}
+		
+		for (int i=0;i<b.length; i++) {
+			b[i] = s1.nextInt();
+		}
+		
+		int i = 0;
+		while (a[i]<a.length) {
+			ab[i] = a[i];
+			i++;
+		}
+		while (b[i]<b.length) {
+			ab[i+a.length] = b[i];
+			i++;
+		}
+		
+		for (int i1=0; i1<ab.length; i1++) {
+			System.out.println(ab[i]);
+		}
+	
+	
+	
+	}
+	
+	
+
+}
