@@ -5,19 +5,19 @@ import java.util.ArrayList;
 public class ArrayListExample 
 {
 	public static void main(String[] args) {
-		ArrayList<Integer> arrl = new ArrayList<Integer>();
+		ArrayList arrl = new ArrayList();
 		
 		arrl.add(10);
 		arrl.add(20);
 		arrl.add(44);
-		arrl.add(05);
+		arrl.add("hello");
 		
 		System.out.println(arrl);
-		arrl.sort(null);
+//		arrl.sort(null);
 		System.out.println(arrl);
-		for (int i :arrl) {
-			System.out.println(i);
-		}
+//		for (int i :arrl) {
+//			System.out.println(i);
+//		}
 		System.out.println("======================");
 		System.out.println(arrl.size());
 		
