@@ -98,7 +98,7 @@ public class HashMapEmployee
 		for (Employee emp : empDetails) {
 			desigName.add(emp.getEmpDesig());
 		}
-//		System.out.println(desigName);
+		System.out.println(desigName);
 			if (desigName.contains(Dept)) 
 			{
 				System.out.println(Dept + " found in the DataBase");

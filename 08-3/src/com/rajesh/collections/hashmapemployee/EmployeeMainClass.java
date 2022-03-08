@@ -1,7 +1,5 @@
 package com.rajesh.collections.hashmapemployee;
 
-import java.util.concurrent.Delayed;
-
 public class EmployeeMainClass {
 	public static void main(String[] args) {
 		HashMapEmployee empDetails = new HashMapEmployee();
@@ -11,7 +9,6 @@ public class EmployeeMainClass {
 		empDetails.highestSal();
 		empDetails.sortEmployeeDepartment();
 		empDetails.sortEmployeeName();
-		System.out.println("");
 		empDetails.searchInDesig();
 	}
 }
