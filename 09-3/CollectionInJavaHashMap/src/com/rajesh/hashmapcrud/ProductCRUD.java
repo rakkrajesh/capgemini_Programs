@@ -1,15 +1,14 @@
 package com.rajesh.hashmapcrud;
 
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
+import java.util.Iterator;
+import java.util.Map.Entry;
 import java.util.Scanner;
 import java.util.Set;
-import java.util.TreeSet;
+
 
 public class ProductCRUD {
 	// HashMap of Product Objects
@@ -40,17 +39,17 @@ public class ProductCRUD {
 					addProduct();
 					break;
 				case "update":
-					// updateProduct();
+					updateProductByName();
 					break;
 				case "delete":
 					// deleteStudent();
-					// deleteProductUsingSearch();
+					deleteProductUsingName();
 					break;
 				case "display":
 					displayProduct();
 					break;
 				case "search":
-					// searchProduct();
+					searchProductByName();
 					break;
 				case "sortbyname":
 					sortProductByName();
@@ -77,6 +76,75 @@ public class ProductCRUD {
 		}
 	}
 	
+	private void deleteProductUsingName() throws ProductNotFoundException {
+		Product product =  searchProductByName();
+		
+		String productkey = findProductKey(product);
+		
+		if(product == null) {
+			throw new ProductNotFoundException("Product not found....");
+		}else {
+			
+			listOfProducts.remove(productkey,product);
+			
+		}
+		
+	}
+
+	Entry<String,Product> productEntry = null;
+	Set<Entry<String, Product>> productEntrySets = null;
+	private String findProductKey(Product product) throws ProductNotFoundException {
+		String foundkey = null;
+		if(product == null) {
+			throw new ProductNotFoundException("Product not found....");
+		}else {
+			productEntrySets = listOfProducts.entrySet();
+		Iterator<Entry<String, Product>> productItr = productEntrySets.iterator();
+		while(productItr.hasNext()) {
+			productEntry = productItr.next();
+			if(productEntry.getValue().equals(product)) {
+				foundkey =  productEntry.getKey();
+			}
+		}
+		}
+		System.out.println(productEntrySets);
+		return foundkey;
+	}
+
+	Product foundProduct = null;
+	private  Product searchProductByName(){
+		System.out.println("Enter the name of the product to search");
+		String searchPName = sc.nextLine();
+		prodObjects = listOfProducts.values();
+		Iterator<Product> productItr = prodObjects.iterator();
+		while(productItr.hasNext()) {
+			foundProduct = productItr.next();
+			if(foundProduct.getProductName().equals(searchPName)) {
+				System.out.println("Product FOund...");
+				break;
+			}
+		}
+		System.out.println("Product Details are.....");
+		System.out.println("Product Id = " + foundProduct.getProductId());
+		System.out.println("Product Id = " + foundProduct.getProductName());
+		System.out.println("Product Id = " + foundProduct.getProductPrice());
+		System.out.println("Product Id = " + foundProduct.getProductCategory());
+		return foundProduct;
+	}
+
+	private void updateProductByName() throws ProductNotFoundException {
+	
+		Product product =  searchProductByName();
+		
+		if(product == null) {
+			throw new ProductNotFoundException("Product not found....");
+		}else {
+			System.out.println("Enter the details to update (if necessary else enter the previous values");
+			readProductDetails();
+		}
+		
+	}
+
 	private void sortProductByPriceDesc() {
 		System.out.println("Before Sorted List .........");
 		displayProduct();
